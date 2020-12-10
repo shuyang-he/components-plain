@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="tb-browser-marker tb-browser-marker--chrome tb-os-marker tb-os-marker--mac-useragent"
+>
   <head>
     <meta charset="utf-8" />
     <meta
@@ -13,9 +16,313 @@
     <link rel="stylesheet" href="./css/typography.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/index.js" defer></script>
-    <title>Main</title>
+    <title>Waymo</title>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="page page--homepage en page--scroll-down">
+    <section class="timeline">
+      <div
+        class="timeline__sticky-wrapper ng-scope"
+        ng-controller="MissionStatsController as statsCtrl"
+        ng-init="statsCtrl.init('.timeline__section, .timeline__section--highlight')"
+      >
+        <div class="timeline__sticky">
+          <div class="timeline__part-1">
+            <div class="timeline__header">
+              <h2 class="timeline__title">Why this matters</h2>
+              <p class="timeline__body">
+                Driving today is not as safe or enjoyable as it should be.
+              </p>
+            </div>
+
+            <picture
+              class="timeline__path --desktop-only"
+              data-lazy-load-margin="100%"
+            >
+              <img
+                class="--desktop-only"
+                data-src="/static/images/home/mission_timeline_1.png"
+                src="./media/mission_timeline_1.png"
+              />
+            </picture>
+
+            <picture class="timeline__dot--start --desktop-only">
+              <img
+                class="--desktop-only"
+                data-src="/static/images/home/mission_timeline_dot_teal_large.png"
+                src="./media/mission_timeline_dot_teal_large.png"
+              />
+            </picture>
+
+            <div
+              class="timeline__dot--active section-1"
+              ng-class="'section-' + statsCtrl.currentSection"
+              style="
+                --dot-top-offset: 154.451px;
+                --dot-jump-distance: 76.7843px;
+              "
+            >
+              <picture class="--desktop-only">
+                <img
+                  class="--desktop-only"
+                  data-src="/static/images/home/mission_timeline_dot_teal_large.png"
+                  src="./media/mission_timeline_dot_teal_large.png"
+                />
+              </picture>
+            </div>
+
+            <div class="timeline__section section-1" style="z-index: 5">
+              <h3 class="timeline__section__title invisible--md">
+                1.35 million
+              </h3>
+              <p class="timeline__section__body invisible--md">
+                deaths worldwide due to vehicle crashes in 2016
+              </p>
+
+              <picture class="timeline__section__img">
+                <img
+                  class=""
+                  data-src="/static/images/home/mobile/mission_1.2million.png"
+                  src="./media/mission_1.2million.png"
+                />
+              </picture>
+            </div>
+            <div class="timeline__section section-2" style="z-index: 1">
+              <h3 class="timeline__section__title mission-slide-out-effect">
+                2.4 million
+              </h3>
+              <p class="timeline__section__body mission-slide-out-effect">
+                injuries in 2015 due<br />
+                to vehicle crashes
+              </p>
+
+              <picture class="timeline__section__img invisible--md">
+                <img
+                  class=""
+                  data-src="/static/images/home/mobile/mission_2.4million.png"
+                  src="./media/mission_2.4million.png"
+                />
+              </picture>
+            </div>
+            <div class="timeline__section section-3" style="z-index: 1">
+              <h3 class="timeline__section__title mission-slide-out-effect">
+                2 out of 3
+              </h3>
+              <p class="timeline__section__body mission-slide-out-effect">
+                people will be involved in a drunk driving crash in their
+                lifetime
+              </p>
+
+              <picture class="timeline__section__img invisible--md">
+                <img
+                  class=""
+                  data-src="/static/images/home/mobile/mission_2of3.png"
+                  src="./media/mission_2of3.png"
+                />
+              </picture>
+            </div>
+            <div class="timeline__section section-4" style="z-index: 1">
+              <h3 class="timeline__section__title mission-slide-out-effect">
+                6%
+              </h3>
+              <p class="timeline__section__body mission-slide-out-effect">
+                increase in traffic fatalities in 2016, reaching the highest
+                point in nearly a decade
+              </p>
+
+              <picture class="timeline__section__img invisible--md">
+                <img
+                  class=""
+                  data-src="/static/images/home/mobile/mission_6.png"
+                  src="./media/mission_6.png"
+                />
+              </picture>
+            </div>
+            <div
+              class="timeline__section--highlight section-5"
+              style="z-index: 1"
+            >
+              <h3 class="timeline__section__title mission-slide-out-effect">
+                There’s a clear theme to the vast majority of these incidents:
+                human error and inattention.
+              </h3>
+              <p class="timeline__section__body mission-slide-out-effect">
+                94% of crashes involve human choice or error in the US.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline__part-2">
+            <h2 class="timeline__title--mobility">
+              Mobility and quality of life
+            </h2>
+            <div class="timeline__section --no-img">
+              <h3 class="timeline__section__title">12 million</h3>
+              <p class="timeline__section__body">
+                Americans age 40 and older are blind or have low vision
+              </p>
+
+              <picture class="timeline__section__grey-dot --desktop-only">
+                <source
+                  type="image/webp"
+                  media="(min-width: 900px)"
+                  data-srcset="/static/images/home/mission_timeline_dot_small.webp,
+                      /static/images/home/mission_timeline_dot_small@2x.webp 2x"
+                  srcset="
+                    /static/images/home/mission_timeline_dot_small.webp,
+                    /static/images/home/mission_timeline_dot_small@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 900px)"
+                  data-srcset="/static/images/home/mission_timeline_dot_small.png, /static/images/home/mission_timeline_dot_small@2x.png 2x"
+                  srcset="
+                    /static/images/home/mission_timeline_dot_small.png,
+                    /static/images/home/mission_timeline_dot_small@2x.png 2x
+                  "
+                />
+
+                <img
+                  class="--desktop-only"
+                  data-src="/static/images/home/mission_timeline_dot_small.png"
+                  src="/static/images/home/mission_timeline_dot_small.png"
+                />
+              </picture>
+            </div>
+            <div class="timeline__section --no-img">
+              <h3
+                class="timeline__section__title timeline__section__title--right-pad"
+              >
+                79%
+              </h3>
+              <p class="timeline__section__body">
+                of seniors age 65 and older living in car-dependent communities
+              </p>
+
+              <picture class="timeline__section__grey-dot --desktop-only">
+                <source
+                  type="image/webp"
+                  media="(min-width: 900px)"
+                  data-srcset="/static/images/home/mission_timeline_dot_small.webp,
+                      /static/images/home/mission_timeline_dot_small@2x.webp 2x"
+                  srcset="
+                    /static/images/home/mission_timeline_dot_small.webp,
+                    /static/images/home/mission_timeline_dot_small@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 900px)"
+                  data-srcset="/static/images/home/mission_timeline_dot_small.png, /static/images/home/mission_timeline_dot_small@2x.png 2x"
+                  srcset="
+                    /static/images/home/mission_timeline_dot_small.png,
+                    /static/images/home/mission_timeline_dot_small@2x.png 2x
+                  "
+                />
+
+                <img
+                  class="--desktop-only"
+                  data-src="/static/images/home/mission_timeline_dot_small.png"
+                  src="/static/images/home/mission_timeline_dot_small.png"
+                />
+              </picture>
+            </div>
+            <div class="timeline__section --no-img">
+              <h3 class="timeline__section__title">54 hours</h3>
+              <p class="timeline__section__body">
+                wasted in traffic each year per person
+              </p>
+
+              <picture class="timeline__section__grey-dot --desktop-only">
+                <source
+                  type="image/webp"
+                  media="(min-width: 900px)"
+                  data-srcset="/static/images/home/mission_timeline_dot_small.webp,
+                      /static/images/home/mission_timeline_dot_small@2x.webp 2x"
+                  srcset="
+                    /static/images/home/mission_timeline_dot_small.webp,
+                    /static/images/home/mission_timeline_dot_small@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 900px)"
+                  data-srcset="/static/images/home/mission_timeline_dot_small.png, /static/images/home/mission_timeline_dot_small@2x.png 2x"
+                  srcset="
+                    /static/images/home/mission_timeline_dot_small.png,
+                    /static/images/home/mission_timeline_dot_small@2x.png 2x
+                  "
+                />
+
+                <img
+                  class="--desktop-only"
+                  data-src="/static/images/home/mission_timeline_dot_small.png"
+                  src="/static/images/home/mission_timeline_dot_small.png"
+                />
+              </picture>
+            </div>
+
+            <picture class="timeline__bg" data-lazy-load-margin="100%">
+              <source
+                type="image/webp"
+                media="(min-width: 900px)"
+                data-srcset="/static/images/home/mission_yj.webp,
+                      /static/images/home/mission_yj@2x.webp 2x"
+                srcset="
+                  /static/images/home/mission_yj.webp,
+                  /static/images/home/mission_yj@2x.webp 2x
+                "
+              />
+
+              <source
+                media="(min-width: 900px)"
+                data-srcset="/static/images/home/mission_yj.jpg, /static/images/home/mission_yj@2x.jpg 2x"
+                srcset="
+                  /static/images/home/mission_yj.jpg,
+                  /static/images/home/mission_yj@2x.jpg 2x
+                "
+              />
+
+              <source
+                type="image/webp"
+                media="(min-width: 700px)"
+                data-srcset="/static/images/home/mobile/mission_yj@3x.webp"
+                srcset="/static/images/home/mobile/mission_yj@3x.webp"
+              />
+
+              <source
+                media="(min-width: 700px)"
+                data-srcset="/static/images/home/mobile/mission_yj@3x.jpg"
+                srcset="/static/images/home/mobile/mission_yj@3x.jpg"
+              />
+
+              <source
+                type="image/webp"
+                data-srcset="/static/images/home/mobile/mission_yj.webp, /static/images/home/mobile/mission_yj@2x.webp 2x, /static/images/home/mobile/mission_yj@3x.webp 3x"
+                srcset="
+                  /static/images/home/mobile/mission_yj.webp,
+                  /static/images/home/mobile/mission_yj@2x.webp 2x,
+                  /static/images/home/mobile/mission_yj@3x.webp 3x
+                "
+              />
+
+              <source
+                data-srcset="/static/images/home/mobile/mission_yj@2x.jpg 2x, /static/images/home/mobile/mission_yj@3x.jpg 3x"
+                srcset="
+                  /static/images/home/mobile/mission_yj@2x.jpg 2x,
+                  /static/images/home/mobile/mission_yj@3x.jpg 3x
+                "
+              />
+
+              <img
+                class=""
+                data-src="/static/images/home/mobile/mission_yj.jpg"
+                src="/static/images/home/mobile/mission_yj.jpg"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

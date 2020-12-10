@@ -1,115 +1,287 @@
-/* http://meyerweb.com/eric/tools/css/reset/ */
-/* v1.0 | 20080212 */
-
-html,
-body,
-div,
-span,
+@font-face {
+  font-family: GT-Walsheim;
+  font-weight: 400;
+  src: url(../fonts/GT-Walsheim-Regular.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: GT-Walsheim;
+  font-weight: 500;
+  src: url(../fonts/GT-Walsheim-Medium.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: GT-Walsheim;
+  font-weight: 200;
+  src: url(../fonts/GT-Walsheim-Light.woff) format("woff");
+  font-display: swap;
+}
+a,
+abbr,
+acronym,
+address,
 applet,
-object,
-iframe,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
+header,
+hgroup,
+html,
+i,
+iframe,
 img,
 ins,
 kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
 q,
+ruby,
 s,
 samp,
+section,
 small,
+span,
 strike,
 strong,
 sub,
+summary,
 sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
 table,
-caption,
 tbody,
+td,
 tfoot,
-thead,
-tr,
 th,
-td {
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: inherit;
-  box-sizing: border-box;
+  font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
 }
-body {
+html {
+  box-sizing: border-box;
   line-height: 1;
 }
-a {
-  text-decoration: none;
-  color: black;
+html *,
+html :after,
+html :before {
+  box-sizing: inherit;
 }
 ol,
 ul {
   list-style: none;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+td,
+th {
+  text-align: left;
+  font-weight: 400;
+  vertical-align: middle;
+}
 blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
 blockquote:after,
-q:before,
-q:after {
+blockquote:before,
+q:after,
+q:before {
   content: "";
   content: none;
 }
-
-/* remember to define focus styles! */
-:focus {
-  outline: 0;
+a img {
+  border: none;
 }
-
-/* remember to highlight inserts somehow! */
-ins {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+body,
+html {
+  -webkit-font-smoothing: antialiased;
+  box-shadow: none !important;
+  background-color: #eee;
+  color: #6a6e72;
+  font-family: GT-Walsheim, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-smoothing: antialiased;
+  line-height: 28px;
+  padding: 0;
+}
+body sup,
+html sup {
+  line-height: 0;
+  font-size: smaller;
+  vertical-align: super;
+}
+body.dark,
+html.dark {
+  background-color: #292929;
+}
+body.dark body,
+html.dark body {
+  background-color: #323232;
+  color: #fff;
+}
+.tb-browser-marker--safari.tb-os-marker--mac-useragent.dark body {
+  background-color: #3a393a;
+}
+body {
+  background-color: #fff;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.link,
+a {
+  color: #0078ff;
   text-decoration: none;
 }
-del {
-  text-decoration: line-through;
+.link:hover,
+a:hover {
+  color: #036;
 }
-
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.link.link--underlined,
+a.link--underlined {
+  text-decoration: underline;
+}
+a {
+  cursor: pointer;
+}
+img {
+  display: block;
+  width: 100%;
+}
+section {
+  line-height: 1.3;
+  position: relative;
+  width: 100%;
+}
+section * {
+  z-index: 2;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  line-height: 1;
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 65px;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    margin-bottom: 35px;
+    font-size: 72px;
+  }
+}
+@media (min-width: 1350px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+h2 {
+  margin-bottom: 22px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+@media (min-width: 900px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1350px) {
+  h2 {
+    font-size: 44px;
+  }
+}
+p {
+  line-height: 1.5;
+}
+@media (min-width: 640px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 900px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1350px) {
+  p {
+    font-size: 22px;
+  }
 }
